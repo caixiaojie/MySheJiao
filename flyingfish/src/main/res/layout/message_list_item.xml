@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.marshon.swipe.SwipeWraper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipelayout"
+     android:layout_width="match_parent"
+    android:layout_height="@dimen/height_70">
+
+    <LinearLayout
+         android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|left"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_appear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/width_65"
+            android:background="@color/orange"
+            android:layout_weight="1"
+               android:text="@string/appear"
+            android:textColor="@drawable/white_color_select"
+             android:gravity="center"
+            android:textSize="@dimen/textSize_20"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:minWidth="@dimen/width_65"
+              android:text="@string/delete"
+            android:textColor="@drawable/white_color_select"
+            android:background="@color/red"
+             android:gravity="center"
+            android:textSize="@dimen/textSize_20"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userLinear"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="@dimen/width_50"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/between_mppd_10"
+            android:layout_marginBottom="@dimen/between_mppd_10"
+            android:layout_marginLeft="@dimen/between_mppd_20"
+            android:id="@+id/all_msg"
+            android:background="#ffffff" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/width_50"
+                android:layout_height="@dimen/height_50"
+                android:scaleType="centerCrop"
+                android:id="@+id/head_Img_item"
+                android:src="@mipmap/ic_launcher"/>
+
+            <FrameLayout
+                android:padding="1dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="18dip"
+
+                    android:layout_height="18dip"
+                    android:layout_gravity="right"
+                    android:background="@drawable/red_oval_shape"
+                    android:gravity="center"
+                    android:text="15"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/messageTypeText" />
+            </FrameLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/between_mppd_10"
+             >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:minWidth="@dimen/width_70"
+                    android:maxWidth="@dimen/width_130"
+                    android:id="@+id/nameTextView"
+                    android:gravity="left|bottom"
+                    android:textSize="@dimen/textSize_20"
+                    android:layout_marginLeft="@dimen/between_mppd_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/departmentText"
+                    android:layout_weight="1"
+                    android:text="New Text"
+                    android:minWidth="@dimen/width_70"
+                    android:maxWidth="@dimen/width_130"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="@dimen/between_mppd_2"
+                    android:textSize="@dimen/textSize_12"
+                     android:layout_toRightOf="@+id/nameTextView"
+                    android:layout_toEndOf="@+id/nameTextView"
+                    android:layout_marginLeft="@dimen/between_mppd_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/positionText"
+                    android:layout_weight="1"
+                    android:minWidth="@dimen/width_70"
+                    android:maxWidth="@dimen/width_130"
+                    android:gravity="center|bottom"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/departmentText"
+                    android:layout_toEndOf="@+id/departmentText"
+                    android:layout_marginLeft="@dimen/between_mppd_20"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/between_mppd_10"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/phoneEdit"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_marginRight="@dimen/between_mppd_8"
+                    android:layout_marginLeft="@dimen/between_mppd_10" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/emailEdit"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textSize_12"
+                    android:layout_marginLeft="@dimen/between_mppd_8"
+                    android:layout_marginRight="@dimen/between_mppd_5"
+                    android:gravity="center|top" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.marshon.swipe.SwipeWraper>

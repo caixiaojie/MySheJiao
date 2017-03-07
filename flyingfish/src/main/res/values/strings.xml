@@ -1,0 +1,116 @@
+<resources>
+
+
+    <string name="app_name">flyingfish</string>
+    <string name="login_user">电话号码/电子邮件</string>
+    <string name="login_password">登陆密码</string>
+    <string name="login_find_password">找回密码</string>
+    <string name="login_regist">新用户</string>
+    <string name="login_btn">登陆</string>
+    <string name="sure">确定</string>
+    <string name="app_id">57de3152</string>
+    <!--主页-->
+    <string name="chant_string">群聊</string>
+    <string name="email_string">邮件</string>
+    <string name="note_string">短信</string>
+    <string name="black_string">黑板</string>
+    <string name="appear">举报</string>
+    <string name="delete">删除</string>
+
+    <!--找回密码-->
+    <string name="recover_password">恢复密码</string>
+    <string name="input_email">请输入邮箱地址</string>
+    <string name="next_action">下一步</string>
+    <string name="get_code">获取验证码</string>
+    <string name="input_code">输入验证码</string>
+
+    <!--注册-->
+    <string name="cancel_string">取消</string>
+    <string name="save_string">保存</string>
+    <string name="real_name">全名</string>
+    <string name="team_name">自己团队的名称</string>
+    <string name="team_duty">自己在团队里的职责</string>
+    <string name="team_email">电子邮箱</string>
+    <string name="set_up_password">创建密码</string>
+    <string name="affirm_password">密码确认</string>
+
+    <string name="please_input_name">请输入姓名</string>
+    <string name="please_input_team">请输入自己团队的名称</string>
+    <string name="please_input_team_duty">请输入自己在团队里的职责</string>
+    <string name="please_input_email">请输入电子邮箱</string>
+    <string name="please_input_set_up_password">请输入至少六位密码</string>
+    <string name="please_input_affirm_password">请确认密码</string>
+    <string name="password_different">两次密码不一致</string>
+    <string name="please_input_rightphone">请输入正确电话号码</string>
+    <string name="please_input_rightacount">请输入正确电话或者邮箱</string>
+    <string name="please_up_headimg">请输入正确电话或者邮箱</string>
+    <!--发送服务信息-->
+    <string name="send_service_message">发送</string>
+
+
+    <!--用户信息-->
+    <string name="join_team">加入团队</string>
+    <string name="user_analysis">人员分析</string>
+    <string name="exit_team">离开团队</string>
+    <string name="wroking_phone">工作电话</string>
+    <string name="extension">分机</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="team_Alteration">团队人员变更</string>
+    <string name="new_password_affirm">新密码确认</string>
+    <string name="working_associate">工作交接给他人</string>
+    <string name="accept_working">接手他人工作</string>
+    <string name="suggestion">提出软件改善建议</string>
+    <string name="exit">退出</string>
+    <!--查找好友-->
+    <string name="query">查询</string>
+    <string name="chose_relation">您的下级申请加入团队！</string>
+
+    <!--好友关系-->
+    <string name="superior">他是我的上级</string>
+    <string name="vis_a_vis">我们是同级</string>
+    <string name="subordinate">他是我的下级</string>
+    <string name="alone">单独朋友</string>
+
+    <!--建议页面-->
+    <string name="improve">希望软件做出那些改善</string>
+
+    <!--同意好友加入-->
+    <string name="agree">同意</string>
+    <string name="mistake">关系错误！暂时拒绝</string>
+    <string name="refuse_now">拒绝再次申请</string>
+
+    <!--申请原谅-->
+     <string name="excuse">原谅</string>
+    <string name="refuse">拒绝</string>
+    <string name="message_details">详细内容</string>
+
+    <!--找回密码-->
+    <string name="email_err">邮箱格式不正确</string>
+    <string name="code_err">请输入6位验证码</string>
+    <string name="againcode">重新发送验证码</string>
+    <string name="please_input_condition">请输入搜索内容</string>
+
+    <!--黑板-->
+    <string name="team_chant">与团队分享跨部门通讯录</string>
+    <string name="search">搜索</string>
+    <string name="done">发送</string>
+
+    <string name="users_chant">群聊人员信息</string>
+
+    <string name="input_name_phone">请输入姓名和电话</string>
+
+    <!--人员信息下载-->
+    <string name="user_information">人员信息下载</string>
+    <string name="email_addres">邮箱地址</string>
+    <string name="download">下载</string>
+
+    <string name="change_relationText">变更</string>
+    <string name="change_relation">变更与他的关系</string>
+    <string name="phone">电话</string>
+    <string name="email">邮箱</string>
+    <string name="agree_personText">进入团队同意人</string>
+    <string name="harass">举报骚扰</string>
+    <string name="apple_for_excuse">他申请您的原谅</string>
+
+</resources>

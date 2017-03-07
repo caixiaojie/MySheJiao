@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sildingFinishLayout"
+    android:background="@color/white_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main"></RelativeLayout>
+    <EditText
+        android:id="@+id/search_Edit"
+        android:layout_width="@dimen/width_240"
+        android:layout_height="@dimen/height_34"
+        android:layout_marginLeft="@dimen/between_mppd_20"
+        android:layout_marginTop="@dimen/between_mppd_10"
+        android:paddingLeft="@dimen/between_mppd_30"
+         android:ems="10"
+        android:background="@drawable/white_corners" />
+
+    <ImageView
+        android:id="@+id/user_messageImg"
+        android:layout_width="@dimen/width_25"
+        android:layout_height="@dimen/height_25"
+        android:layout_alignBottom="@+id/search_Edit"
+        android:layout_alignTop="@+id/search_Edit"
+        android:layout_marginLeft="@dimen/between_mppd_16"
+        android:layout_toEndOf="@+id/search_Edit"
+        android:layout_toRightOf="@+id/search_Edit"
+        android:scaleType="centerInside"
+        android:src="@mipmap/fresh_search_icon" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/search_Edit"
+        android:layout_marginTop="@dimen/between_mppd_6"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grade_Horizontal_Recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:clickable="false"
+        android:layout_below="@+id/line_view"
+        android:descendantFocusability="afterDescendants"
+         android:layout_marginTop="@dimen/between_mppd_6"
+        android:layout_marginLeft="@dimen/between_mppd_6"
+        android:layout_marginRight="@dimen/between_mppd_6" />
+
+    <View
+        android:id="@+id/line_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/grade_Horizontal_Recyclerview"
+        android:layout_marginTop="@dimen/between_mppd_6"
+        android:background="@color/gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_Horizontal_Recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_below="@+id/line_view2"
+        android:layout_marginTop="@dimen/between_mppd_12"
+        android:layout_marginBottom="@dimen/between_mppd_12"
+        android:layout_marginLeft="@dimen/between_mppd_6"
+        android:layout_marginRight="@dimen/between_mppd_6"
+        android:background="@color/white_color" />
+
+    <View
+        android:id="@+id/line_view3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/member_Horizontal_Recyclerview"
+        android:background="@color/gray" />
+
+
+    <com.marshon.mrecyclerview.MRecyclerView
+        android:id="@+id/message_Horizontal_Recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/function_RadioGroup"
+        android:background="@color/white_color"
+        android:layout_below="@+id/line_view3"/>
+
+    <View
+        android:id="@+id/line_view4"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/message_Horizontal_Recyclerview"
+        android:background="@color/gray" />
+
+    <RadioGroup
+        android:id="@+id/function_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_58"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/chant_RadioBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/between_mppd_3"
+            android:drawableTop="@mipmap/chant_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_mppd_4"
+            android:paddingTop="@dimen/between_mppd_6"
+            android:text="@string/chant_string"
+            android:textSize="@dimen/textSize_12" />
+
+        <RadioButton
+            android:id="@+id/email_RadioBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/between_mppd_3"
+            android:drawableTop="@mipmap/email_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_mppd_2"
+            android:paddingTop="@dimen/between_mppd_6"
+            android:text="@string/email_string"
+            android:textSize="@dimen/textSize_12" />
+
+        <RadioButton
+            android:id="@+id/note_RadioBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/between_mppd_3"
+            android:drawableTop="@mipmap/note_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_mppd_2"
+            android:paddingTop="@dimen/between_mppd_6"
+            android:text="@string/note_string"
+            android:textSize="@dimen/textSize_12" />
+
+        <RadioButton
+            android:id="@+id/black_RadioBtn"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/between_mppd_3"
+            android:drawableTop="@mipmap/black_icon"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/between_mppd_2"
+            android:paddingTop="@dimen/between_mppd_6"
+            android:text="@string/black_string"
+            android:textSize="@dimen/textSize_12" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="@dimen/width_25"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchImg"
+        android:layout_marginLeft="@dimen/between_mppd_3"
+        android:clickable="true"
+        android:layout_alignTop="@+id/search_Edit"
+        android:layout_alignLeft="@+id/search_Edit"
+        android:layout_alignStart="@+id/search_Edit"
+        android:scaleType="center"
+        android:layout_above="@+id/line_view"
+        android:src="@drawable/search_select"/>
+
+
+
+
+</RelativeLayout>

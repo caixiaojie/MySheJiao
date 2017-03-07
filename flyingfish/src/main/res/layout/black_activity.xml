@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/black_background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="@dimen/height_55">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/go_back_select"
+            android:drawablePadding="@dimen/between_mppd_10"
+            android:paddingLeft="@dimen/between_mppd_10"
+            android:textSize="@dimen/textSize_13"
+            android:textColor="@drawable/black_color_select"
+            android:gravity="center|left"
+             android:text="@string/team_chant"
+            android:id="@+id/textView4" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:id="@+id/img_email"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/between_mppd_5"
+            android:src="@drawable/email_select"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:src="@drawable/delete_select"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/between_mppd_5"
+            android:id="@+id/img_delet" />
+    </LinearLayout>
+
+    <!--<EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/between_mppd_8"
+        android:layout_marginTop="@dimen/between_mppd_8"
+        android:paddingLeft="@dimen/between_mppd_10"
+        android:ems="10"
+        android:gravity="left"
+        android:drawablePadding="@dimen/between_mppd_10"
+        android:drawableLeft="@drawable/search_select"
+        android:hint="@string/search"
+        android:background="@drawable/white_corners"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/between_mppd_8"
+        android:layout_marginBottom="@dimen/between_mppd_8" />-->
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:queryHint="搜索"
+        android:layout_margin="8dp"
+        android:background="@drawable/white_corners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SearchView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_74"
+        android:background="@color/pink"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/between_mppd_5"
+                android:inputType="textPersonName"
+                android:background="@drawable/white_corners"
+                android:ems="10"
+                android:hint="name"
+                android:id="@+id/editText2"
+                android:layout_marginTop="@dimen/between_mppd_5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:ems="10"
+                android:hint="phone"
+                android:layout_marginLeft="@dimen/between_mppd_5"
+                android:id="@+id/editText4"
+                android:background="@drawable/white_corners"
+                android:layout_gravity="right"
+                android:layout_toRightOf="@+id/editText2"
+                android:layout_toEndOf="@+id/editText2"
+                android:layout_marginTop="@dimen/between_mppd_5"
+                android:layout_marginBottom="@dimen/between_mppd_5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:hint="dept/duty"
+                android:layout_below="@+id/editText2"
+                android:layout_marginLeft="@dimen/between_mppd_5"
+                android:background="@drawable/white_corners"
+                android:ems="10"
+                android:id="@+id/editText7"
+                android:layout_marginTop="@dimen/between_mppd_5" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:layout_below="@+id/editText4"
+                android:background="@drawable/white_corners"
+                android:layout_marginLeft="@dimen/between_mppd_5"
+                android:ems="10"
+                android:hint="email"
+                android:id="@+id/editText8"
+                android:layout_gravity="right"
+                  android:layout_marginTop="@dimen/between_mppd_5"
+                android:layout_marginBottom="@dimen/between_mppd_5" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:id="@+id/textView6"
+            android:layout_marginRight="@dimen/between_mppd_5"
+            android:layout_marginLeft="@dimen/between_mppd_5"
+             android:layout_weight="1"
+            android:text="@string/done"
+            android:gravity="center"
+            android:background="@drawable/cyan_corners_btn_select"
+            android:layout_marginTop="@dimen/between_mppd_5"
+            android:layout_marginBottom="@dimen/between_mppd_5"
+            android:textColor="@drawable/white_color_select"/>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrHeaderBackground="#5f00"
+        app:ptrRefreshableViewBackground="#fff"
+        app:ptrHeaderTextColor="#50ff"
+        app:ptrAnimationStyle="rotate"
+        android:id="@+id/listView4"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"> <!-- pressed the button status -->
+        <shape  >
+            <!-- 背景色 -->
+            <solid android:color="@color/cyan_on"/>
+            <!-- 边框色 -->
+            <stroke android:width="0.5dip" android:color="@color/color_frame" />
+            <corners android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:bottomLeftRadius="6dp"/>
+        </shape>
+    </item>
+
+    <item   > <!-- pressed the button status -->
+        <shape >
+            <!-- 背景色 -->
+            <solid android:color="@color/cyan"/>
+            <!-- 边框色 -->
+            <stroke android:width="0.5dip" android:color="@color/gray" />
+            <padding android:bottom="@dimen/between_mppd_1"
+                android:right="@dimen/between_mppd_1"
+                android:left="@dimen/between_mppd_3"
+                android:top="@dimen/between_mppd_2"></padding>
+            <corners android:topLeftRadius="6dp"
+                android:topRightRadius="6dp"
+                android:bottomRightRadius="6dp"
+                android:bottomLeftRadius="6dp"/>
+        </shape>
+    </item>
+</selector>

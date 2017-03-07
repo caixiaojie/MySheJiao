@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_35">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/height_25"
+            android:minWidth="@dimen/width_18"
+            android:src="@drawable/go_back_select"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/between_mppd_35"
+            android:id="@+id/go_backImg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/users_chant"
+             android:minHeight="@dimen/height_25"
+            android:minWidth="@dimen/height_18"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:id="@+id/usersGradView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_10"
+         />
+</LinearLayout>

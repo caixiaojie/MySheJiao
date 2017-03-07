@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="@dimen/width_42"
+    android:layout_height="@dimen/height_35"
+      >
+
+    <CheckBox
+        android:layout_width="@dimen/width_35"
+        android:layout_height="@dimen/height_35"
+        android:text="3"
+        android:textSize="@dimen/textSize_18"
+        android:button="@null"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/between_mppd_7"
+        android:id="@+id/gradeText"
+        android:textColor="@color/black_color"
+        android:background="@drawable/black_corners_btn_select"
+         />
+</RelativeLayout>

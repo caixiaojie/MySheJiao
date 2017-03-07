@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_18">
+
+        <ImageView
+            android:layout_width="@dimen/width_25"
+            android:layout_height="@dimen/height_30"
+            android:id="@+id/imageView4"
+            android:src="@drawable/go_back_select"
+            android:layout_marginLeft="@dimen/between_mppd_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/user_information"
+            android:id="@+id/textView3"
+            android:layout_gravity="center"
+            android:textSize="@dimen/textSize_22"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="@dimen/height_35">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white_color"
+            android:layout_marginBottom="@dimen/between_mppd_0_5"
+            android:gravity="center"
+            android:text="@string/email_addres"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white_color"
+            android:layout_marginLeft="@dimen/between_mppd_0_5"
+            android:layout_marginBottom="@dimen/between_mppd_0_5"
+            android:gravity="center"
+             android:id="@+id/email_addressText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/between_mppd_35"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/between_mppd_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView10"
+            android:drawableRight="@mipmap/ic_launcher"
+            android:paddingRight="@dimen/between_mppd_25"
+            android:paddingLeft="@dimen/between_mppd_25"
+             android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white_color"
+            android:layout_marginBottom="@dimen/between_mppd_0_5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:drawableRight="@mipmap/ic_launcher"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white_color"
+            android:layout_marginLeft="@dimen/between_mppd_0_5"
+            android:layout_marginBottom="@dimen/between_mppd_0_5" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/download"
+        android:id="@+id/downloadText"
+        android:clickable="true"
+        android:textColor="@drawable/blue_color_select"
+        android:textSize="@dimen/textSize_20"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_50" />
+
+
+</LinearLayout>

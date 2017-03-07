@@ -1,0 +1,155 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--login_activity-->
+    <dimen name="login_activity_top">182dp</dimen>
+    <dimen name="login_password_right">28dp</dimen>
+    <dimen name="login_username_height">40dp</dimen>
+    <dimen name="text_padding_left">10dp</dimen>
+    <dimen name="login_find_pass_height">37dp</dimen>
+    
+    <dimen name="login_btn_width">266dp</dimen>
+    <dimen name="login_btn_height">40dp</dimen>
+    <dimen name="login_btn_top">5dp</dimen>
+
+
+    <!--layout_marginTop-->
+    <dimen name="layout_marginTop_10">50dp</dimen>
+
+
+    <!--layout_marginLeft-->
+    <dimen name="layout_marginLeft_10">10sp</dimen>
+
+    <!-- 字体大小 -->
+    <dimen name="textSize_8">8sp</dimen>
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_11">11sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_15">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_22">22sp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="textSize_26">26sp</dimen>
+    <dimen name="textSize_28">28sp</dimen>
+    <dimen name="textSize_30">30sp</dimen>
+
+
+    <!-- 间距 -->
+    <dimen name="between_mppd_0_5">0.5dp</dimen>
+    <dimen name="between_mppd_1">1dp</dimen>
+    <dimen name="between_mppd_2">2dp</dimen>
+    <dimen name="between_mppd_3">3dp</dimen>
+    <dimen name="between_mppd_4">4dp</dimen>
+    <dimen name="between_mppd_5">5dp</dimen>
+    <dimen name="between_mppd_6">6dp</dimen>
+    <dimen name="between_mppd_7">6dp</dimen>
+    <dimen name="between_mppd_8">8dp</dimen>
+    <dimen name="between_mppd_10">10dp</dimen>
+    <dimen name="between_mppd_12">12dp</dimen>
+    <dimen name="between_mppd_14">14dp</dimen>
+    <dimen name="between_mppd_15">15dp</dimen>
+    <dimen name="between_mppd_16">16dp</dimen>
+    <dimen name="between_mppd_18">18dp</dimen>
+    <dimen name="between_mppd_20">20dp</dimen>
+    <dimen name="between_mppd_23">23dp</dimen>
+    <dimen name="between_mppd_24">24dp</dimen>
+    <dimen name="between_mppd_25">25dp</dimen>
+    <dimen name="between_mppd_26">26dp</dimen>
+    <dimen name="between_mppd_28">28dp</dimen>
+    <dimen name="between_mppd_30">30dp</dimen>
+    <dimen name="between_mppd_35">35dp</dimen>
+    <dimen name="between_mppd_40">40dp</dimen>
+    <dimen name="between_mppd_45">45dp</dimen>
+    <dimen name="between_mppd_48">48dp</dimen>
+    <dimen name="between_mppd_50">50dp</dimen>
+    <dimen name="between_mppd_90">90dp</dimen>
+    <dimen name="between_mppd_153">153dp</dimen>
+    <dimen name="between_mppd_238">238dp</dimen>
+
+    <!-- 间距 -->
+    <dimen name="height_0_5">0.5dp</dimen>
+    <dimen name="height_1">1dp</dimen>
+    <dimen name="height_2">2dp</dimen>
+    <dimen name="height_3">3dp</dimen>
+    <dimen name="height_4">4dp</dimen>
+    <dimen name="height_6">6dp</dimen>
+    <dimen name="height_8">8dp</dimen>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_12">12dp</dimen>
+    <dimen name="height_14">14dp</dimen>
+    <dimen name="height_15">15dp</dimen>
+    <dimen name="height_16">16dp</dimen>
+    <dimen name="height_18">18dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_25">25dp</dimen>
+    <dimen name="height_30">30dp</dimen>
+    <dimen name="height_32">32dp</dimen>
+    <dimen name="height_33">33dp</dimen>
+    <dimen name="height_34">34dp</dimen>
+    <dimen name="height_35">35dp</dimen>
+    <dimen name="height_36">36dp</dimen>
+    <dimen name="height_40">40dp</dimen>
+    <dimen name="height_42">42dp</dimen>
+    <dimen name="height_45">45dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+    <dimen name="height_50">50dp</dimen>
+    <dimen name="height_55">55dp</dimen>
+    <dimen name="height_58">58dp</dimen>
+    <dimen name="height_60">60dp</dimen>
+    <dimen name="height_63">63dp</dimen>
+    <dimen name="height_70">70dp</dimen>
+    <dimen name="height_74">74dp</dimen>
+    <dimen name="height_78">78dp</dimen>
+    <dimen name="height_100">100dp</dimen>
+    <dimen name="height_115">115dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="height_175">175dp</dimen>
+    <dimen name="height_178">178dp</dimen>
+    <dimen name="height_230">230dp</dimen>
+    <dimen name="height_220">220dp</dimen>
+    <dimen name="height_320">320dp</dimen>
+
+
+    <dimen name="width_0_5">0.5dp</dimen>
+    <dimen name="width_1">1dp</dimen>
+    <dimen name="width_2">2dp</dimen>
+    <dimen name="width_3">3dp</dimen>
+    <dimen name="width_4">4dp</dimen>
+    <dimen name="width_6">6dp</dimen>
+    <dimen name="width_8">8dp</dimen>
+    <dimen name="width_10">10dp</dimen>
+    <dimen name="width_12">12dp</dimen>
+    <dimen name="width_14">14dp</dimen>
+    <dimen name="width_15">15dp</dimen>
+    <dimen name="width_16">16dp</dimen>
+    <dimen name="width_18">18dp</dimen>
+    <dimen name="width_20">20dp</dimen>
+    <dimen name="width_25">25dp</dimen>
+    <dimen name="width_26">26dp</dimen>
+    <dimen name="width_30">30dp</dimen>
+    <dimen name="width_33">33dp</dimen>
+    <dimen name="width_35">35dp</dimen>
+    <dimen name="width_40">40dp</dimen>
+    <dimen name="width_42">42dp</dimen>
+    <dimen name="width_45">45dp</dimen>
+    <dimen name="width_48">48dp</dimen>
+    <dimen name="width_50">50dp</dimen>
+    <dimen name="width_60">60dp</dimen>
+    <dimen name="width_65">65dp</dimen>
+    <dimen name="width_70">70dp</dimen>
+    <dimen name="width_110">110dp</dimen>
+    <dimen name="width_115">115dp</dimen>
+    <dimen name="width_130">130dp</dimen>
+    <dimen name="width_160">160dp</dimen>
+    <dimen name="width_180">180dp</dimen>
+    <dimen name="width_220">220dp</dimen>
+    <dimen name="width_240">240dp</dimen>
+    <dimen name="width_156">156dp</dimen>
+    <dimen name="width_480">480dp</dimen>
+
+</resources>

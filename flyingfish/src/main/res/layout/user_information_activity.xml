@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <TextView
+                android:id="@+id/cancel_actionBtn"
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/height_55"
+                android:paddingLeft="@dimen/between_mppd_23"
+                android:paddingTop="@dimen/between_mppd_23"
+                 android:clickable="true"
+                android:text="@string/cancel_string"
+                android:textColor="@drawable/blue_color_select"
+                android:textSize="@dimen/textSize_18" />
+
+            <TextView
+                android:id="@+id/saveDataBtn"
+                android:layout_width="@dimen/width_110"
+                android:layout_height="@dimen/height_55"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="right"
+                 android:layout_alignTop="@+id/cancel_actionBtn"
+                android:paddingTop="@dimen/between_mppd_23"
+                android:paddingRight="@dimen/between_mppd_23"
+                android:text="@string/save_string"
+                android:textColor="@drawable/blue_color_select"
+                android:textSize="@dimen/textSize_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_0_5"
+                android:layout_below="@+id/textView11"
+                 android:background="@color/gray" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/between_mppd_10"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/width_60"
+                android:layout_height="@dimen/width_60"
+                android:layout_marginLeft="@dimen/between_mppd_24"
+                android:src="@mipmap/user_icon"
+                android:id="@+id/head_faceImage" />
+
+            <ImageView
+                android:layout_width="@dimen/width_60"
+                android:layout_height="@dimen/width_60"
+                android:id="@+id/qr_codeImage"
+                android:layout_marginRight="@dimen/between_mppd_30"
+                 android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/real_nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:layout_marginTop="@dimen/between_mppd_14"
+            android:paddingLeft="@dimen/between_mppd_28"
+            android:background="@color/white_color"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/textSize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/department_nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:background="@color/white_color"
+            android:paddingLeft="@dimen/between_mppd_28"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/textSize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/member_roleEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:background="@color/white_color"
+            android:paddingLeft="@dimen/between_mppd_28"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/textSize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white_color"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/countryCheckBox"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="2"
+                android:button="@null"
+                android:drawableRight="@drawable/spinnser_select"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/between_mppd_28" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/between_mppd_5"
+                android:layout_marginTop="@dimen/between_mppd_5"
+                android:background="@color/gray" />
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:background="@color/white_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/between_mppd_12"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_16" />
+
+            <Button
+                android:id="@+id/button"
+                 android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Button" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/workPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:background="@color/white_color"
+                android:drawablePadding="@dimen/between_mppd_10"
+                 android:textSize="@dimen/textSize_16"
+                android:hint="@string/wroking_phone" />
+
+            <EditText
+                android:id="@+id/extensionTelephone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:background="@color/white_color"
+                android:inputType="textPersonName"
+                android:gravity="center"
+                android:hint="@string/extension"
+                android:textSize="@dimen/textSize_16"
+                android:layout_gravity="right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_55"
+            android:background="@color/white_color"
+            android:paddingTop="@dimen/between_mppd_5"
+            android:paddingBottom="@dimen/between_mppd_5"
+             android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/join_teamBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@mipmap/join_team"
+                android:textColor="@drawable/black_color_select"
+                android:gravity="center"
+                android:text="@string/join_team" />
+
+            <RadioButton
+                android:id="@+id/staff_analysis_RaidoBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:textColor="@drawable/black_color_select"
+                android:drawableTop="@mipmap/user_analysis"
+                android:text="@string/user_analysis"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/exit_team_RadioBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:textColor="@drawable/black_color_select"
+                android:drawableTop="@mipmap/exit_team"
+                android:gravity="center"
+                android:text="@string/exit_team" />
+
+            <RadioButton
+                android:id="@+id/exit_RadioBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:textColor="@drawable/black_color_select"
+                android:drawableTop="@mipmap/exit"
+                android:gravity="center"
+                android:text="@string/exit" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/userEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@color/gray_deep"
+            android:textColor="@color/white_color"
+             android:gravity="center"
+            android:textSize="@dimen/textSize_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/oldPasswordEdit"
+             android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:layout_gravity="center_horizontal"
+             android:background="@color/white_color"
+            android:hint="@string/old_password"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/between_mppd_12"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/gray_char"
+            android:textSize="@dimen/textSize_16" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+        <EditText
+            android:id="@id/newPasswrodEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white_color"
+            android:hint="@string/new_password"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/between_mppd_12"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/gray_char"
+            android:textSize="@dimen/textSize_16" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+        <EditText
+            android:id="@+id/newPasswordAffirmEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:hint="@string/new_password_affirm"
+            android:paddingLeft="@dimen/between_mppd_12"
+            android:textColor="@color/black_color"
+            android:textColorHint="@color/gray_char"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+             android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:background="@color/gray_deep"
+            android:textColor="@color/white_color"
+            android:text="@string/team_Alteration"
+            android:gravity="center"
+            android:textSize="@dimen/textSize_16" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_42"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:text="@string/accept_working"
+            android:gravity="center"
+            android:textColor="@drawable/blue_color_select"
+            android:textSize="@dimen/textSize_16"
+            android:id="@+id/take_overWorkText"
+            android:layout_weight="1" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/working_associate"
+            android:textSize="@dimen/textSize_16"
+            android:id="@+id/connect_workText"
+            android:textColor="@drawable/blue_color_select"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+        <TextView
+            android:id="@+id/software_suggtionText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_42"
+            android:text="@string/suggestion"
+            android:gravity="center"
+            android:textColor="@drawable/blue_color_select"
+            android:textSize="@dimen/textSize_16"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+    </LinearLayout>
+</ScrollView>

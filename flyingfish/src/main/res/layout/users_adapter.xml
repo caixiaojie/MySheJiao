@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:minWidth="@dimen/width_70"
+
+    android:orientation="vertical"
+    android:paddingBottom="6dip"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/headImgItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/width_20"
+        android:minHeight="@dimen/height_20"
+        android:layout_gravity="center"
+        android:src="@mipmap/user_icon"
+        android:layout_centerHorizontal="true"
+        />
+    <CheckBox
+        android:id="@+id/nameCheckBoxItem"
+        android:layout_below="@+id/image_item"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:button="@drawable/box_select"
+          android:minHeight="@dimen/height_20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/between_mppd_4"
+        android:layout_gravity="center"
+          />
+</LinearLayout>

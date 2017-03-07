@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+          android:layout_marginTop="@dimen/login_activity_top">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/between_mppd_40"
+            android:paddingLeft="@dimen/between_mppd_10"
+             android:id="@+id/login_username"
+            android:hint="@string/login_user"
+            android:background="@drawable/line_frame_shape_select"
+             android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="@dimen/login_password_right"
+            android:layout_marginRight="@dimen/login_password_right" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/between_mppd_40"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/between_mppd_10"
+            android:hint="@string/login_password"
+            android:ems="10"
+             android:background="@drawable/line_frame_shape_select"
+            android:id="@+id/login_password"
+            android:layout_below="@+id/login_username"
+            android:layout_alignLeft="@+id/login_username"
+            android:layout_alignStart="@+id/login_username"
+            android:layout_alignRight="@+id/login_username"
+            android:layout_alignEnd="@+id/login_username"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="@dimen/login_password_right"
+            android:layout_marginLeft="@dimen/login_password_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_find_pass_height"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="@dimen/login_password_right"
+        android:layout_marginLeft="@dimen/login_password_right">
+
+        <TextView
+            android:layout_width="@dimen/width_130"
+            android:layout_height="match_parent"
+            android:text="@string/login_find_password"
+            android:id="@+id/fpw_txt"
+            android:clickable="true"
+            android:background="@drawable/line_frame_shape_select"
+            android:textColor="@drawable/black_color_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/text_padding_left"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="@dimen/width_130"
+            android:layout_height="match_parent"
+             android:text="@string/login_regist"
+            android:id="@+id/new_userText"
+            android:background="@drawable/line_frame_shape_select"
+            android:textColor="@drawable/black_color_select"
+            android:layout_below="@+id/login_Btn"
+            android:layout_toLeftOf="@+id/fpw_txt"
+            android:layout_toStartOf="@+id/fpw_txt"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+         android:text="@string/login_btn"
+        android:id="@+id/login_Btn"
+        android:gravity="center"
+         android:clickable="true"
+        android:layout_below="@+id/user_relativelayout"
+        android:background="@drawable/gray_rectangle_btn_select"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/login_password_right"
+        android:layout_marginRight="@dimen/login_password_right"
+        android:layout_marginTop="@dimen/login_btn_top" />
+
+
+</LinearLayout>

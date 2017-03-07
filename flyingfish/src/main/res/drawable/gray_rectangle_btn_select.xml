@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true"> <!-- pressed the button status -->
+    <shape  android:shape="rectangle"  >
+        <!-- 背景色 -->
+        <solid android:color="@color/gray_on"/>
+
+        <padding android:bottom="@dimen/between_mppd_1"
+            android:right="@dimen/between_mppd_1"
+            android:left="@dimen/between_mppd_3"
+            android:top="@dimen/between_mppd_2"></padding>
+    </shape>
+</item>
+<item   > <!-- pressed the button status -->
+    <shape   android:shape="rectangle">
+        <solid android:color="@color/gray"/>
+        <!-- 边框色 -->
+        <padding android:bottom="@dimen/between_mppd_1"
+            android:right="@dimen/between_mppd_1"
+            android:left="@dimen/between_mppd_3"
+            android:top="@dimen/between_mppd_2"></padding>
+    </shape>
+</item>
+</selector>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white_color"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/go_backImg"
+        android:layout_width="@dimen/width_35"
+        android:layout_height="@dimen/height_35"
+        android:layout_marginLeft="@dimen/between_mppd_25"
+        android:layout_marginTop="@dimen/between_mppd_20"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/go_back" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_mppd_20">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/connect_HeadImg"
+            android:layout_width="@dimen/width_70"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginLeft="@dimen/between_mppd_35"
+            android:src="@mipmap/user_icon" />
+
+        <LinearLayout
+             android:layout_width="@dimen/width_160"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/connect_HeadImg"
+            android:layout_marginLeft="@dimen/between_mppd_35">
+
+            <TextView
+                android:id="@+id/connect_nameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_22"
+                android:layout_marginBottom="@dimen/between_mppd_0_5" />
+
+            <TextView
+                android:id="@+id/connect_departmentText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_18"
+                android:layout_marginBottom="@dimen/between_mppd_0_5" />
+
+            <TextView
+                android:id="@+id/connect_member_roleText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_14" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/between_mppd_50"
+        android:id="@+id/imageView8"
+        android:src="@mipmap/connet"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/between_mppd_10">
+
+        <LinearLayout
+             android:layout_width="@dimen/width_160"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/between_mppd_35"
+            android:id="@+id/linearLayout5">
+
+            <TextView
+                android:id="@+id/takeover_nameText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_22"
+                android:layout_marginBottom="@dimen/between_mppd_0_5" />
+
+            <TextView
+                android:id="@+id/takeover_departmentText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_18"
+                android:layout_marginBottom="@dimen/between_mppd_0_5" />
+
+            <TextView
+                android:id="@+id/takeover_member_roleText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_34"
+                android:gravity="center"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/textSize_14" />
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/takeover_HeadImg"
+            android:layout_width="@dimen/width_70"
+            android:layout_height="@dimen/height_40"
+            android:src="@mipmap/user_icon"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/linearLayout5"
+            android:layout_toEndOf="@+id/linearLayout5"
+            android:layout_marginLeft="@dimen/between_mppd_35" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+         android:id="@+id/connect_personsText"
+        android:gravity="center"
+        android:textColor="@color/white_color"
+        android:background="@color/gray_char"
+        android:textSize="@dimen/textSize_20"
+        android:layout_marginTop="@dimen/between_mppd_15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/agree"
+        android:id="@+id/agreeText"
+        android:drawableLeft="@mipmap/agree"
+        android:drawablePadding="@dimen/between_mppd_15"
+        android:textColor="@drawable/blue_color_select"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/refuse"
+        android:textColor="@drawable/blue_color_select"
+        android:drawableLeft="@mipmap/refuse_again"
+        android:drawablePadding="@dimen/between_mppd_15"
+        android:id="@+id/refuseText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/between_mppd_18" />
+</LinearLayout>
