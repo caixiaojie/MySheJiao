@@ -84,8 +84,8 @@ public class Black_Activity extends Activity {
         ButterKnife.bind(this);
         FlyingFishIntance.getInstance().addActivity(this);
         lv.setMode(PullToRefreshBase.Mode.BOTH);//设置可以下拉刷新和上拉加载
-        //lv.setRefreshing();//进入黑板，自动执行下拉刷新请求数据
         blackboardindex(1);//进入黑板,请求第一页数据
+        initEnterBlaboard();//适配数据
         lv.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
             @Override
             public void onPullDownToRefresh(PullToRefreshBase<ListView> refreshView) {
@@ -99,8 +99,7 @@ public class Black_Activity extends Activity {
                 new MyAsyncTask().execute(NetUrl.blackboardindex,"2");
             }
         });
-        //适配数据
-        initEnterBlaboard();
+
         //搜索查询
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -196,8 +195,7 @@ public class Black_Activity extends Activity {
                             if (dataBeanList != null) {
                                 for (int i = 0; i < dataBeanList.size(); i++) {
                                     EnterBlaboard.DataBean dataBean = dataBeanList.get(i);
-                                    String id1 = dataBean.getId();
-                                    String id_item = id1;
+                                    String id_item = dataBean.getId();
                                     idData.add(id_item);
                                     String dept = dataBean.getDept();
                                     String email = dataBean.getEmail();
@@ -284,7 +282,7 @@ public class Black_Activity extends Activity {
         OkHttpUtils.post()
                 .url(NetUrl.delblkboard)
                 .addParams("member_id", FlyingFishIntance.getInstance().getMember_Id())
-                .addParams("ids", last_delStr)
+                .addParams("ids", str)
                 .build()
                 .execute(new UserCallback(getApplicationContext()) {
                     @Override
@@ -329,8 +327,13 @@ public class Black_Activity extends Activity {
                         EnterBlaboard json = new Gson().fromJson(response, EnterBlaboard.class);
                         if (json.getStatus() == 200) {
                             List<EnterBlaboard.DataBean> beanList = json.getData();
+                            //搜索时需要重新添加如集合，因为位置发生改变
+                            idData.clear();
+                            idDelete.clear();
                             for (int i = 0; i < beanList.size(); i++) {
                                 EnterBlaboard.DataBean dataBean = beanList.get(i);
+                                String search_id = dataBean.getId();
+                                idData.add(search_id);
                                 Blackboardindex bean = new Blackboardindex();
                                 bean.setDept(dataBean.getDept());
                                 bean.setEmail(dataBean.getEmail());
