@@ -99,6 +99,12 @@ public class Black_Activity extends Activity {
                 new MyAsyncTask().execute(NetUrl.blackboardindex,"2");
             }
         });
+        /*lv.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
+            @Override
+            public void onLastItemVisible() {
+                adapter.notifyDataSetChanged();
+            }
+        });*/
 
         //搜索查询
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -132,6 +138,17 @@ public class Black_Activity extends Activity {
         adapter.notifyDataSetChanged();
     }
 
+    /**
+     * 添加信息适配器
+     */
+    private void addBlaboard() {
+        //设置适配器
+        adapter = new BlabordAdapter(this);
+        //加载空数据
+        lv.setAdapter(adapter);
+        //加载有数据
+        adapter.setData(data);
+    }
     //初始化添加黑板信息的数据
     private void initDatas() {
         name = et_name.getText().toString();
@@ -168,7 +185,6 @@ public class Black_Activity extends Activity {
                     public void onResponse(String response, int id) {
                         AddBlaboard addBlaboard = new Gson().fromJson(response, AddBlaboard.class);
                         SuperCustomToast.getInstance(getApplicationContext()).show(addBlaboard.getMsg());
-                        adapter.notifyDataSetChanged();
                     }
                 });
     }
@@ -217,7 +233,7 @@ public class Black_Activity extends Activity {
     }
 
     /**
-     * 点击发送
+     * 点击发送，删除
      */
     @OnClick({R.id.textView6, R.id.img_delet})
     public void onClick(View view) {
@@ -225,7 +241,8 @@ public class Black_Activity extends Activity {
             case R.id.textView6:
                 //初始化数据
                 initDatas();
-                initEnterBlaboard();
+//                initEnterBlaboard();
+                addBlaboard();
                 setHintData();
                 addSuccess();
                 break;
@@ -347,6 +364,10 @@ public class Black_Activity extends Activity {
                     }
                 });
     }
+
+    /**
+     * 异步任务加载数据
+     */
     class MyAsyncTask extends AsyncTask<String,Void,List<String>>{
         private String flag;
         @Override
