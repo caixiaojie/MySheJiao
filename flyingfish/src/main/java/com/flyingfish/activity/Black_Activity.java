@@ -208,6 +208,7 @@ public class Black_Activity extends Activity {
                                     blackboardBean.setPhone(phone);
                                     data.add(blackboardBean);
                                 }
+                                adapter.notifyDataSetChanged();
                                 Log.e("info", idData.toString());
                             }
                         }
