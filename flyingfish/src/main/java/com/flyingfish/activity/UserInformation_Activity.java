@@ -96,6 +96,8 @@ public class UserInformation_Activity extends Activity {
     CircleImageView head_faceImage;
     @BindView(R.id.qr_codeImage)
     ImageView qr_codeImage;
+    @BindView(R.id.take_overWorkText)
+    TextView take_overWorkText;
     private ArrayList<HashMap<String, String>> listems;
     private PopupWindow popupWindow;
     private String code = "";
@@ -255,7 +257,6 @@ public class UserInformation_Activity extends Activity {
                 finish();
                 break;
             case R.id.take_overWorkText://接手工作
-
                 break;
             case R.id.connect_workText://交接工作
 
