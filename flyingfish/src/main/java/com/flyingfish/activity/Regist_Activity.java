@@ -213,11 +213,11 @@ public class Regist_Activity extends Activity implements View.OnClickListener {
             return;
         }
 
-        if (FlyingFishIntance.getInstance().isEmail(emailEdit.getText().toString())) {
+        /*if (FlyingFishIntance.getInstance().isEmail(emailEdit.getText().toString())) {
             str = new String(getString(R.string.please_input_email));
             SuperCustomToast.getInstance(getApplicationContext()).show(str);
             return;
-        }
+        }*/
 
         if (setupPasswordEdit.getText().toString().length() < 6) {
             str = new String(getString(R.string.please_input_set_up_password));
