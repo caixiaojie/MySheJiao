@@ -1,6 +1,7 @@
 package com.flyingfish.fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -11,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -72,6 +74,22 @@ public class Main_Fragment extends Fragment {
     RadioGroup function_RadioGroup;
     @BindView(R.id.search_Edit)
     EditText search_Edit;
+
+    @BindView(R.id.btn3)
+    Button btn3;
+    @BindView(R.id.btn2)
+    Button btn2;
+    @BindView(R.id.btn1)
+    Button btn1;
+    @BindView(R.id.btn0)
+    Button btn0;
+    @BindView(R.id.btn_1)
+    Button btn_1;
+    @BindView(R.id.btn_2)
+    Button btn_2;
+    @BindView(R.id.btn_spc)
+    Button btn_spc;
+
     private ChooseAnimatorsAdapter animAdapter;
     private List<IndexFrilistBean.DataBean.AllListBean> datas;
     private ArrayList<GradeBean> gradeDatas;
@@ -89,18 +107,28 @@ public class Main_Fragment extends Fragment {
     private ArrayList<IndexFrilistBean.DataBean.AllListBean> datas_search;
     private MarshonRecyclerAdapter adapter_search;
 
+    //记录状态标记
+    int f3 = 1;
+    int f2 = 1;
+    int f1 = 1;
+    int f0 = 1;
+    int f_1 = 1;
+    int f_2 = 1;
+    int f_spc = 1;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.main_activity, null);
         ButterKnife.bind(this, view);
         initMessageRecycler();
-        initGradeRecyclerview();
+ //       initGradeRecyclerview();
         initUserRecyclerview();
         initMessageData();
-        indexGrade();
+        //indexGrade();
         indexSendInfo();
         initRadioGroup();
+
+
 
         SoftKeyBoardListener.setListener(getActivity(), new SoftKeyBoardListener.OnSoftKeyBoardChangeListener() {
             @Override
@@ -119,6 +147,81 @@ public class Main_Fragment extends Fragment {
 
         return view;
 
+    }
+
+    /**
+     * 搜索按钮的点击事件
+     * @param view
+     */
+    @OnClick({R.id.btn3,R.id.btn2,R.id.btn1,R.id.btn0,R.id.btn_1,R.id.btn_2,R.id.btn_spc,})
+    public void OnClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn3:
+                if (f3 % 2 != 0) {
+                    btn3.setSelected(true);
+                    //btn3.setTextColor(Color.WHITE);
+                    f3++;
+                }else {
+                    btn3.setSelected(false);
+                    //btn3.setTextColor(Color.BLACK);
+                    f3++;
+                }
+                break;
+            case R.id.btn2:
+                if (f2 % 2 != 0) {
+                    btn2.setSelected(true);
+                    f2++;
+                }else {
+                    btn2.setSelected(false);
+                    f2++;
+                }
+                break;
+            case R.id.btn1:
+                if (f1 % 2 != 0) {
+                    btn1.setSelected(true);
+                    f1++;
+                }else {
+                    btn1.setSelected(false);
+                    f1++;
+                }
+                break;
+            case R.id.btn0:
+                if (f0 % 2 != 0) {
+                    btn0.setSelected(true);
+                    f0++;
+                }else {
+                    btn0.setSelected(false);
+                    f0++;
+                }
+                break;
+            case R.id.btn_1:
+                if (f_1 % 2 != 0) {
+                    btn_1.setSelected(true);
+                    f_1++;
+                }else {
+                    btn_1.setSelected(false);
+                    f_1++;
+                }
+                break;
+            case R.id.btn_2:
+                if (f_2 % 2 != 0) {
+                    btn_2.setSelected(true);
+                    f_2++;
+                }else {
+                    btn_2.setSelected(false);
+                    f_2++;
+                }
+                break;
+            case R.id.btn_spc:
+                if (f_spc % 2 != 0) {
+                    btn_spc.setSelected(true);
+                    f_spc++;
+                }else {
+                    btn_spc.setSelected(false);
+                    f_spc++;
+                }
+                break;
+        }
     }
 
     /**
@@ -165,7 +268,7 @@ public class Main_Fragment extends Fragment {
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);//横向滚动的RecycleView
-        mGradeRecyclerView.setLayoutManager(linearLayoutManager);
+//        mGradeRecyclerView.setLayoutManager(linearLayoutManager);
         gradeDatas = new ArrayList<GradeBean>();
         gradeRecycler = new GradeRecyclerAdapter(getContext(), gradeDatas) {
             @Override
@@ -347,7 +450,7 @@ public class Main_Fragment extends Fragment {
     /**
      * 等级接口
      */
-    private void indexGrade() {
+    /*private void indexGrade() {
         OkHttpUtils
                 .post()
                 .url(NetUrl.indexGrade)
@@ -371,14 +474,14 @@ public class Main_Fragment extends Fragment {
                             } else {
                                 SuperCustomToast.getInstance(getContext().getApplicationContext()).show(jsonObject.getString("msg"));
                             }
-                            gradeRecycler.notifyDataSetChanged();
+//                            gradeRecycler.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
 
                     }
                 });
-    }
+    }*/
 
     /**
      * 空间消息接口
@@ -435,6 +538,14 @@ public class Main_Fragment extends Fragment {
                 });
     }
 
+    /**
+     * 查找好友
+     * @param search_value
+     * @param grade
+     * @param department
+     * @param depart_role
+     * @param type
+     */
     private void search(String search_value, String grade, String department, String depart_role, String type) {
 
         FlyingFishIntance.search(search_value, grade, department, depart_role, type, new UserCallback(getContext().getApplicationContext()) {
@@ -523,7 +634,7 @@ public class Main_Fragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == FlyingFishIntance.getInstance().EXIT_TEAM) {
-            indexGrade();
+            //indexGrade();
             indexSendInfo();
             initMessageData();
         }

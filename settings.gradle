@@ -1,1 +1,1 @@
-include ':app', ':ptr_lib', ':mrecyclerview', ':flyingfish'
+include ':app', ':ptr_lib', ':mrecyclerview', ':flyingfish', ':test'
