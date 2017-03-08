@@ -112,7 +112,7 @@ public class LoginActivity extends Activity {
                 .addParams("udid",uniqueId)
                 .addParams("devicetype","0")
                 .addParams("name",phoneInfo)
-                 .build()
+                .build()
                 .execute(new UserCallback(getApplicationContext()) {
                     @Override
                     public void onError(Call call, Exception e, int id) {
