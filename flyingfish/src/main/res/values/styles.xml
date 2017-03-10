@@ -67,8 +67,8 @@
     <!--复选框样式-->
     <!-- CustomCheckBox theme -->
     <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/box_select</item>
-    </style>
+    <item name="android:button">@drawable/box_select</item>
+</style>
     <style name="CustomCheckBoxTheme_2" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:button">@drawable/indigo_color_select1</item>
     </style>

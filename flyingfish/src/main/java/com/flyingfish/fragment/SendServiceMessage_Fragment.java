@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 
@@ -28,6 +29,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 import okhttp3.Call;
 
@@ -45,19 +47,44 @@ public class SendServiceMessage_Fragment extends Fragment {
     private String img_path="";
     private View view;
 
+    //搜索按钮id
+    @BindView(R.id.btn3)
+    Button btn3;
+    @BindView(R.id.btn2)
+    Button btn2;
+    @BindView(R.id.btn1)
+    Button btn1;
+    @BindView(R.id.btn0)
+    Button btn0;
+    @BindView(R.id.btn_1)
+    Button btn_1;
+    @BindView(R.id.btn_2)
+    Button btn_2;
+    @BindView(R.id.btn_spc)
+    Button btn_spc;
+    //记录状态标记
+    int f3 = 1;
+    int f2 = 1;
+    int f1 = 1;
+    int f0 = 1;
+    int f_1 = 1;
+    int f_2 = 1;
+    int f_spc = 1;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate( R.layout.send_service_message_avtivity, null);
-        initGradeRecyclerview();
-        indexGrade();
+        ButterKnife.bind(this, view);
+        //initGradeRecyclerview();
+        //indexGrade();
         return view;
     }
 
     /**
      * 等级Recyclerview
      */
-    private void initGradeRecyclerview() {
+    /*private void initGradeRecyclerview() {
         mGradeRecyclerView = (RecyclerView)view.findViewById(R.id.messageList);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity().getApplication());
         linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);//横向滚动的RecycleView
@@ -91,13 +118,13 @@ public class SendServiceMessage_Fragment extends Fragment {
             }
         };
         mGradeRecyclerView.setAdapter(gradeRecycler);
-    }
+    }*/
 
 
     /**
      * 等级接口
      */
-    private void indexGrade() {
+    /*private void indexGrade() {
         OkHttpUtils
                 .post()
                 .url(NetUrl.indexGrade)
@@ -128,7 +155,7 @@ public class SendServiceMessage_Fragment extends Fragment {
 
                     }
                 });
-    }
+    }*/
 
     /**
      * 发送服务接口
@@ -186,6 +213,81 @@ public class SendServiceMessage_Fragment extends Fragment {
                 break;
             case R.id.sendinfoText:
                 sendinfo();
+                break;
+        }
+    }
+
+    /**
+     * 搜索按钮的点击事件
+     * @param view
+     */
+    @OnClick({R.id.btn3,R.id.btn2,R.id.btn1,R.id.btn0,R.id.btn_1,R.id.btn_2,R.id.btn_spc,})
+    public void OnClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn3:
+                if (f3 % 2 != 0) {
+                    btn3.setSelected(true);
+                    //btn3.setTextColor(Color.WHITE);
+                    f3++;
+                }else {
+                    btn3.setSelected(false);
+                    //btn3.setTextColor(Color.BLACK);
+                    f3++;
+                }
+                break;
+            case R.id.btn2:
+                if (f2 % 2 != 0) {
+                    btn2.setSelected(true);
+                    f2++;
+                }else {
+                    btn2.setSelected(false);
+                    f2++;
+                }
+                break;
+            case R.id.btn1:
+                if (f1 % 2 != 0) {
+                    btn1.setSelected(true);
+                    f1++;
+                }else {
+                    btn1.setSelected(false);
+                    f1++;
+                }
+                break;
+            case R.id.btn0:
+                if (f0 % 2 != 0) {
+                    btn0.setSelected(true);
+                    f0++;
+                }else {
+                    btn0.setSelected(false);
+                    f0++;
+                }
+                break;
+            case R.id.btn_1:
+                if (f_1 % 2 != 0) {
+                    btn_1.setSelected(true);
+                    f_1++;
+                }else {
+                    btn_1.setSelected(false);
+                    f_1++;
+                }
+                break;
+            case R.id.btn_2:
+                if (f_2 % 2 != 0) {
+                    btn_2.setSelected(true);
+                    f_2++;
+                }else {
+                    btn_2.setSelected(false);
+                    f_2++;
+                }
+                break;
+            case R.id.btn_spc:
+                if (f_spc % 2 != 0) {
+                    btn_spc.setSelected(true);
+                    f_spc++;
+                }else {
+                    btn_spc.setSelected(false);
+                    f_spc++;
+                }
                 break;
         }
     }

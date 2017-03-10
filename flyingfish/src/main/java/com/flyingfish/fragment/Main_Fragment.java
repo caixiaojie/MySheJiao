@@ -2,6 +2,7 @@ package com.flyingfish.fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -74,7 +75,7 @@ public class Main_Fragment extends Fragment {
     RadioGroup function_RadioGroup;
     @BindView(R.id.search_Edit)
     EditText search_Edit;
-
+    //搜索按钮id
     @BindView(R.id.btn3)
     Button btn3;
     @BindView(R.id.btn2)
@@ -660,6 +661,11 @@ public class Main_Fragment extends Fragment {
             case R.id.email_RadioBtn:
                 break;
             case R.id.note_RadioBtn:
+                /*Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setType("vnd.android-dir/mms-sms");*/
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:10086;1008611"));//群发用分号隔开
+                intent.putExtra("sms_body","测试信息");
+                startActivity(intent);
                 break;
             case R.id.black_RadioBtn:
                 startActivity(new Intent(getContext(), Black_Activity.class));
